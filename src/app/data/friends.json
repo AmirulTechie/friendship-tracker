@@ -7,8 +7,8 @@
         "days_since_contact": 18,
         "status": "overdue",
         "tags": [
-            "university",
-            "close friend"
+            "close friend",
+            "university"
         ],
         "bio": "Met during university orientation. Used to study late nights together and grab street food after exams.",
         "goal": 14,
@@ -22,8 +22,8 @@
         "days_since_contact": 11,
         "status": "almost due",
         "tags": [
-            "gym",
-            "serious"
+            "serious",
+            "gym"
         ],
         "bio": "Met at the gym. We barely talk but always motivate each other to push harder.",
         "goal": 12,
@@ -37,8 +37,8 @@
         "days_since_contact": 6,
         "status": "on-track",
         "tags": [
-            "work",
-            "loyal"
+            "loyal",
+            "work"
         ],
         "bio": "Worked together on a tough project. Always reliable when things get stressful.",
         "goal": 10,

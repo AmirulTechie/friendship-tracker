@@ -4,7 +4,7 @@ import React from 'react';
 const FriendCard = ({friend}) => {
     const { name, picture, email, days_since_contact, status, tags } = friend
     return (
-        <div className="flex flex-col items-center justify-center w-65 bg-white py-6 font-sans">
+        <div className="flex flex-col items-center justify-center p-6 bg-white py-6 font-sans hover:shadow-xl hover:cursor-pointer rounded-xl">
             <Image
                 src={picture}
                 alt="Profile"
@@ -18,15 +18,23 @@ const FriendCard = ({friend}) => {
             </h2>
 
             <span className="text-[15px] text-slate-500 mb-5">
-                {days_since_contact}d ago
+                <p> {days_since_contact}d ago </p>
             </span>
-
-            <span className="px-3 py-1 mb-4 text-xs font-semibold tracking-wide text-emerald-800 bg-emerald-100 rounded-full">
-                {tags[0]}
-            </span>
-
-            <span className="px-4 py-1.5 text-[15px] font-medium text-white bg-[#EBA74C] rounded-full shadow-sm">
-                {status}
+            <div className='flex gap-2'>
+            {
+                tags.map((tag, index) => <span key={index} className="px-3 py-1 mb-4 text-xs font-semibold tracking-wide text-emerald-800 bg-emerald-100 rounded-full">
+                    {tag.toUpperCase()}
+                </span>)
+            }
+            </div>
+            <span className={`px-4 py-1.5 text-[15px] font-medium text-white 
+                ${status === "overdue" ? "bg-[#EF4444]" :
+                    status === "almost due" ? "bg-[#EFAD44]" :
+                    status === "on-track" ? "bg-[#244D3F]" :
+                    ""
+                } 
+                rounded-full shadow-sm`}>
+                {status.toUpperCase()}
             </span>
         </div>
     );

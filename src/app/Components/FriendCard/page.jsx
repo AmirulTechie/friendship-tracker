@@ -5,13 +5,13 @@ const FriendCard = ({friend}) => {
     const { name, picture, email, days_since_contact, status, tags } = friend
     return (
         <div className="flex flex-col items-center justify-center w-65 bg-white py-6 font-sans">
-            {/* <Image
+            <Image
                 src={picture}
                 alt="Profile"
                 width={84}
                 height={84}
-                className="rounded-full object-cover mb-4"
-            /> */}
+                className="rounded-full mb-4"
+            />
 
             <h2 className="text-[22px] font-bold text-slate-800 mb-1">
                 {name}

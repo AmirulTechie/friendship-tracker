@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Ezio Auditore",
+        "picture": "https://i.ibb.co.com/LX4tkP2y/Ezio.jpg",
+        "email": "ezio.auditore@mail.com",
+        "days_since_contact": 18,
+        "status": "overdue",
+        "tags": [
+            "university",
+            "close friend"
+        ],
+        "bio": "Met during university orientation. Used to study late nights together and grab street food after exams.",
+        "goal": 14,
+        "next_due_date": "2026-04-12"
+    },
+    {
+        "id": 2,
+        "name": "Kratos",
+        "picture": "https://i.ibb.co.com/pVBDbH3/Kratos.jpg",
+        "email": "kratos.sparta@mail.com",
+        "days_since_contact": 11,
+        "status": "almost due",
+        "tags": [
+            "gym",
+            "serious"
+        ],
+        "bio": "Met at the gym. We barely talk but always motivate each other to push harder.",
+        "goal": 12,
+        "next_due_date": "2026-04-17"
+    },
+    {
+        "id": 3,
+        "name": "Arthur Morgan",
+        "picture": "https://i.ibb.co.com/gFd33nZ6/Arthur.png",
+        "email": "arthur.morgan@mail.com",
+        "days_since_contact": 6,
+        "status": "on-track",
+        "tags": [
+            "work",
+            "loyal"
+        ],
+        "bio": "Worked together on a tough project. Always reliable when things get stressful.",
+        "goal": 10,
+        "next_due_date": "2026-04-20"
+    },
+    {
+        "id": 4,
+        "name": "Geralt of Rivia",
+        "picture": "https://i.ibb.co.com/Kxc5GgDw/Geralt.jpg",
+        "email": "geralt.rivia@mail.com",
+        "days_since_contact": 20,
+        "status": "overdue",
+        "tags": [
+            "introvert",
+            "deep talks"
+        ],
+        "bio": "Met at a mutual friend's gathering. We bond over deep conversations and quiet hangouts.",
+        "goal": 14,
+        "next_due_date": "2026-04-11"
+    },
+    {
+        "id": 5,
+        "name": "Aloy",
+        "picture": "https://i.ibb.co.com/qL5MfWS2/Aloy.png",
+        "email": "aloy.horizon@mail.com",
+        "days_since_contact": 4,
+        "status": "on-track",
+        "tags": [
+            "adventure",
+            "travel"
+        ],
+        "bio": "Met during a group trip. Loves exploring new places and trying random food spots.",
+        "goal": 10,
+        "next_due_date": "2026-04-23"
+    },
+    {
+        "id": 6,
+        "name": "Nathan Drake",
+        "picture": "https://i.ibb.co.com/NggFXysS/Nathan.png",
+        "email": "nathan.drake@mail.com",
+        "days_since_contact": 13,
+        "status": "almost due",
+        "tags": [
+            "fun",
+            "chill"
+        ],
+        "bio": "Met through a mutual friend. Always up for random plans and spontaneous hangouts.",
+        "goal": 14,
+        "next_due_date": "2026-04-16"
+    },
+    {
+        "id": 7,
+        "name": "Lara Croft",
+        "picture": "https://i.ibb.co.com/0jHGQ4X0/Lara.jpg",
+        "email": "lara.croft@mail.com",
+        "days_since_contact": 9,
+        "status": "on-track",
+        "tags": [
+            "smart",
+            "independent"
+        ],
+        "bio": "Met at a workshop. Super focused and always encourages learning new skills.",
+        "goal": 12,
+        "next_due_date": "2026-04-21"
+    },
+    {
+        "id": 8,
+        "name": "Master Chief",
+        "picture": "https://i.ibb.co.com/kVxLLK81/Chief.jpg",
+        "email": "chief.halo@mail.com",
+        "days_since_contact": 15,
+        "status": "overdue",
+        "tags": [
+            "quiet",
+            "reliable"
+        ],
+        "bio": "Met at a previous job. Doesn't talk much but always shows up when needed.",
+        "goal": 12,
+        "next_due_date": "2026-04-13"
+    },
+    {
+        "id": 9,
+        "name": "Jin Sakai",
+        "picture": "https://i.ibb.co.com/cSKt3m8X/Jin.jpg",
+        "email": "jin.sakai@mail.com",
+        "days_since_contact": 17,
+        "status": "overdue",
+        "tags": [
+            "disciplined",
+            "loyal"
+        ],
+        "bio": "Met during a training program. We used to practice skills together and push each other to improve.",
+        "goal": 14,
+        "next_due_date": "2026-04-14"
+    },
+    {
+        "id": 10,
+        "name": "Ellie",
+        "picture": "https://i.ibb.co.com/x832bQ1n/Ellie.jpg",
+        "email": "ellie.lastofus@mail.com",
+        "days_since_contact": 12,
+        "status": "almost due",
+        "tags": [
+            "creative",
+            "close friend"
+        ],
+        "bio": "Met during a creative project. We still share ideas and support each other's goals.",
+        "goal": 12,
+        "next_due_date": "2026-04-18"
+    }
+]

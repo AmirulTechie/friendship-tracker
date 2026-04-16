@@ -5,7 +5,7 @@ import { ImStatsDots } from "react-icons/im";
 
 const Navbar = () => {
     return (
-        <div className="navbar fixed top-0 left-0 right-0 z-50 bg-base-100 shadow-sm justify-between">
+        <div className="navbar fixed top-0 left-0 right-0 z-100 bg-base-100 shadow-sm justify-between">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,9 +23,9 @@ const Navbar = () => {
             </div>
             <div className="hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link href=""><AiOutlineHome></AiOutlineHome> Home</Link></li>
-                    <li><Link href=""><CiClock2></CiClock2> Timeline</Link></li>
-                    <li><Link href=""><ImStatsDots></ImStatsDots> Stats</Link></li>
+                    <li><Link href="/"><AiOutlineHome></AiOutlineHome> Home</Link></li>
+                    <li><Link href="/timeline"><CiClock2></CiClock2> Timeline</Link></li>
+                    <li><Link href="/stats"><ImStatsDots></ImStatsDots> Stats</Link></li>
                 </ul>
             </div>
         </div>

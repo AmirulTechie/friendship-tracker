@@ -22,7 +22,7 @@ const FriendCard = ({friend}) => {
             </span>
             <div className='flex gap-2'>
             {
-                tags.map((tag, index) => <span key={index} className="px-3 py-1 mb-4 text-xs font-semibold tracking-wide text-emerald-800 bg-emerald-100 rounded-full">
+                tags.map((tag, index) => <span key={index} className="px-2 py-1 mb-4 text-[10px] font-bold tracking-wide text-emerald-800 bg-emerald-100 rounded-full">
                     {tag.toUpperCase()}
                 </span>)
             }

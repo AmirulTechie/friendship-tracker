@@ -1,9 +1,10 @@
 import { GoPlus } from "react-icons/go";
-import ShortSummary from "./Short-summary/page";
+import ShortSummary from "../Short-summary/page";
 
-const Banner = () => {
+const Banner = ({friends}) => {
     return (
-        <div className="hero bg-base-200 min-h-screen mt-0.5">
+        <>
+        <div className="hero bg-base-200 mt-40">
             <div className="hero-content text-center container mx-auto">
                 <div className="">
                     <h1 className="text-2xl md:text-5xl font-bold">Friends to keep close in your life</h1>
@@ -14,10 +15,8 @@ const Banner = () => {
                     <button className="btn bg-[#244D3F] text-white"><GoPlus></GoPlus> Add a Friend</button>
                 </div>
             </div>
-            <div className="mt-100">
-                <ShortSummary></ShortSummary>
-            </div>
         </div>
+        </>
     );
 };
 

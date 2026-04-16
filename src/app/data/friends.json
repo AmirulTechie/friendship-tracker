@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Ezio Auditore",
-        "picture": "https://i.ibb.co.com/LX4tkP2y/Ezio.jpg",
+        "picture": "https://i.ibb.co.com/cSmtnscC/ezio.jpg",
         "email": "ezio.auditore@mail.com",
         "days_since_contact": 18,
         "status": "overdue",
@@ -122,7 +122,7 @@
     {
         "id": 9,
         "name": "Jin Sakai",
-        "picture": "https://i.ibb.co.com/cSKt3m8X/Jin.jpg",
+        "picture": "https://i.ibb.co.com/63WZ2dZ/Jin.webp",
         "email": "jin.sakai@mail.com",
         "days_since_contact": 17,
         "status": "overdue",

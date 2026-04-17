@@ -1,9 +1,9 @@
+
+import CheckInButtons from "@/app/Components/CheckInBtns/page";
 import friends from "@/app/data/friends.json";
 import Image from "next/image";
 import { BsBellSlashFill } from "react-icons/bs";
-import { IoIosVideocam } from "react-icons/io";
-import { IoArchive, IoCall } from "react-icons/io5";
-import { LuMessageSquareText } from "react-icons/lu";
+import { IoArchive} from "react-icons/io5";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const FriendDetailPage = async ({ params }) => {
@@ -84,20 +84,7 @@ const FriendDetailPage = async ({ params }) => {
 
                     <div className="bg-white rounded-2xl p-5 shadow-sm">
                         <h3 className="font-semibold text-slate-700 mb-4">Quick Check-In</h3>
-                        <div className="grid grid-cols-3 gap-3">
-                            <button className="flex flex-col items-center justify-center border border-slate-200 rounded-xl py-4 gap-2 text-slate-600 hover:bg-slate-50 hover:cursor-pointer">
-                                <span className="text-2xl"><LuMessageSquareText /></span>
-                                    <span className="text-sm">TEXT</span>
-                            </button>
-                            <button className="flex flex-col items-center justify-center border border-slate-200 rounded-xl py-4 gap-2 text-slate-600 hover:bg-slate-50 hover:cursor-pointer">
-                                    <span className="text-2xl"><IoCall /></span>
-                                    <span className="text-sm">CALL</span>
-                            </button>
-                            <button className="flex flex-col items-center justify-center border border-slate-200 rounded-xl py-4 gap-2 text-slate-600 hover:bg-slate-50 hover:cursor-pointer">
-                                <span className="text-2xl"><IoIosVideocam /></span>
-                                    <span className="text-sm">VIDEO</span>
-                            </button>
-                        </div>
+                        <CheckInButtons friendId={friendId} name={name}></CheckInButtons>
                     </div>
 
                 </div>

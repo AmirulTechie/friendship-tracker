@@ -1,9 +1,12 @@
+'use client'
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AiOutlineHome } from "react-icons/ai";
 import { CiClock2 } from "react-icons/ci";
 import { ImStatsDots } from "react-icons/im";
 
 const Navbar = () => {
+    const pathName = usePathname();
     return (
         <div className="navbar fixed top-0 left-0 right-0 z-100 bg-base-100 shadow-sm justify-between">
             <div className="navbar-start">
@@ -14,18 +17,18 @@ const Navbar = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><Link href="/"><AiOutlineHome></AiOutlineHome> Home</Link></li>
-                        <li><Link href="/timeline"><CiClock2></CiClock2> Timeline</Link></li>
-                        <li><Link href="/stats"><ImStatsDots></ImStatsDots> Stats</Link></li>
+                        <li><Link href="/" className={` ${pathName === '/' ? "bg-[#244D3F] text-white" : ""}`}><AiOutlineHome></AiOutlineHome> Home</Link></li>
+                        <li><Link href="/timeline" className={` ${pathName === '/timeline' ? "bg-[#244D3F] text-white" : ""}`}><CiClock2></CiClock2> Timeline</Link></li>
+                        <li><Link href="/stats" className={` ${pathName === '/stats' ? "bg-[#244D3F] text-white" : ""}`}><ImStatsDots></ImStatsDots> Stats</Link></li>
                     </ul>
                 </div>
                 <Link href="/" className="text-2xl font-bold">Keen<span className="text-[#244D3F]">Keeper</span></Link>
             </div>
             <div className="hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    <li><Link href="/"><AiOutlineHome></AiOutlineHome> Home</Link></li>
-                    <li><Link href="/timeline"><CiClock2></CiClock2> Timeline</Link></li>
-                    <li><Link href="/stats"><ImStatsDots></ImStatsDots> Stats</Link></li>
+                <ul className="menu menu-horizontal px-1 gap-5">
+                    <li><Link href="/" className={` ${pathName === '/' ? "bg-[#244D3F] text-white" : ""}`}><AiOutlineHome></AiOutlineHome> Home</Link></li>
+                    <li><Link href="/timeline" className={` ${pathName === '/timeline' ? "bg-[#244D3F] text-white" : ""}`}><CiClock2></CiClock2> Timeline</Link></li>
+                    <li><Link href="/stats" className={` ${pathName === '/stats' ? "bg-[#244D3F] text-white" : ""}`}><ImStatsDots></ImStatsDots> Stats</Link></li>
                 </ul>
             </div>
         </div>

@@ -1,9 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const FriendCard = ({friend}) => {
-    const { name, picture, email, days_since_contact, status, tags } = friend
+    const {id, name, picture, days_since_contact, status, tags } = friend
     return (
+        <Link href={`/friend/${id}`}>
         <div className="flex flex-col items-center justify-center p-6 bg-white py-6 font-sans hover:shadow-xl hover:cursor-pointer rounded-xl">
             <Image
                 src={picture}
@@ -37,6 +39,7 @@ const FriendCard = ({friend}) => {
                 {status.toUpperCase()}
             </span>
         </div>
+        </Link>
     );
 };
 

@@ -14,9 +14,9 @@ const Navbar = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><Link href=""><AiOutlineHome></AiOutlineHome> Home</Link></li>
-                        <li><Link href=""><CiClock2></CiClock2> Timeline</Link></li>
-                        <li><Link href=""><ImStatsDots></ImStatsDots> Stats</Link></li>
+                        <li><Link href="/"><AiOutlineHome></AiOutlineHome> Home</Link></li>
+                        <li><Link href="/timeline"><CiClock2></CiClock2> Timeline</Link></li>
+                        <li><Link href="/stats"><ImStatsDots></ImStatsDots> Stats</Link></li>
                     </ul>
                 </div>
                 <Link href="/" className="text-2xl font-bold">Keen<span className="text-[#244D3F]">Keeper</span></Link>

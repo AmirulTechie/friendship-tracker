@@ -19,13 +19,18 @@ const TimelinePage = () => {
         <div className="min-h-screen pt-20 pb-10 mt-20">
             <div className="container mx-auto max-w-3xl px-4">
                 <div className="flex justify-between items-center mb-6">
-                    <h1 className="text-2xl font-bold text-slate-800">Timeline</h1>
-                    <button onClick={clearHistory} className="text-xs border border-red-200 px-3 py-1 rounded-lg text-red-500 hover:bg-red-50 hover:cursor-pointer">
-                        Clear History
-                    </button>
+                    <h1 className="text-3xl font-bold text-slate-800">Timeline</h1>
+                    {interactions.length === 0 ? "" :  
+                        <button onClick={clearHistory} className="text-xs border border-red-200 px-3 py-1 rounded-lg text-red-500 hover:bg-red-50 hover:cursor-pointer">
+                            Clear History
+                        </button>
+                    }
+                    
                 </div>
                 {interactions.length === 0 ? (
-                    <p className="text-slate-400">No interactions yet.</p>
+                    <div className="bg-white text-center rounded-2xl">
+                        <p className="">No Interactions Yet</p>
+                    </div>
                 ) : (
                     <div className="flex flex-col gap-4">
                         {interactions.map((item, i) => (

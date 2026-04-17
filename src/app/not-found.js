@@ -4,7 +4,6 @@ export default function NotFound() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-center bg-white px-6">
             <div className="relative flex flex-col items-center">
-                {/* Background Decorative Text */}
                 <span
                     className="absolute -top-32 select-none text-[15rem] font-bold opacity-[0.03] sm:text-[20rem]"
                     style={{ color: '#244D3F' }}
@@ -12,7 +11,6 @@ export default function NotFound() {
                     404
                 </span>
 
-                {/* Main Content */}
                 <div className="z-10 text-center">
                     <h1
                         className="mb-4 text-5xl font-extrabold tracking-tight sm:text-7xl"
@@ -45,7 +43,6 @@ export default function NotFound() {
                     </div>
                 </div>
 
-                {/* Minimalist Footer */}
                 <div className="mt-20 flex gap-6 text-sm text-gray-400">
                     <Link href="/faq" className="hover:underline">FAQ</Link>
                     <Link href="/sitemap" className="hover:underline">Sitemap</Link>

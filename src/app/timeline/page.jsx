@@ -24,7 +24,7 @@ const TimelinePage = () => {
     };
 
     return (
-        <div className="min-h-screen pt-20 pb-10 mt-0 md:mt-20">
+        <div className="min-h-screen pt-20 pb-10 mt-2">
             <div className="container mx-auto max-w-3xl px-4">
 
                 <div className="flex justify-between items-center mb-6">

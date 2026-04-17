@@ -21,7 +21,7 @@ const StatsPage = () => {
     ].filter(d => d.value > 0);
 
     return (
-        <div className="min-h-screen pt-20 pb-10 mt-20">
+        <div className="min-h-screen pt-20 pb-10 mt-0 md:mt-20">
             <div className="container mx-auto max-w-3xl px-4">
                 <div className="flex justify-between items-center mb-6">
                     <h1 className="text-3xl font-bold text-slate-800">Stats</h1>

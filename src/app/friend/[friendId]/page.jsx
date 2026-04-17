@@ -69,7 +69,7 @@ const FriendDetailPage = async ({ params }) => {
                             <p className="text-sm text-slate-400 mt-1">Goal (Days)</p>
                         </div>
                         <div className="bg-white rounded-2xl p-4 text-center shadow-sm">
-                            <p className="text-3xl font-bold text-slate-800">{next_due_date}</p>
+                            <p className="text-xl md:text-3xl font-bold text-slate-800">{next_due_date}</p>
                             <p className="text-sm text-slate-400 mt-1">Next Due</p>
                         </div>
                     </div>

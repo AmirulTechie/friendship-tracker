@@ -38,14 +38,14 @@ const TimelinePage = () => {
                     <div className="flex flex-col gap-4">
                         {interactions.map((item, i) => (
                             <div key={i} className="bg-white rounded-2xl p-5 shadow-sm flex items-center gap-4">
-                                <span className="text-2xl text-emerald-700">
-                                    {item.type === "Call" && <IoCall />}
-                                    {item.type === "Text" && <LuMessageSquareText />}
-                                    {item.type === "Video" && <IoVideocam />}
+                                <span className="text-3xl text-emerald-700">
+                                    {item.type === "Called" && <IoCall />}
+                                    {item.type === "Texted" && <LuMessageSquareText />}
+                                    {item.type === "Video Called" && <IoVideocam />}
                                 </span>
                                 <div>
                                     <p className="font-semibold text-slate-800">
-                                        <span className="font-bold text-xl">{item.type}</span> with {item.name}
+                                        <span className="font-bold text-xl">{item.type} {item.name}</span>
                                     </p>
                                     <p className="text-sm text-slate-400">{item.date} • {item.time}</p>
                                 </div>

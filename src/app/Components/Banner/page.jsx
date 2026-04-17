@@ -1,7 +1,5 @@
 import { GoPlus } from "react-icons/go";
-import ShortSummary from "../Short-summary/page";
-
-const Banner = ({friends}) => {
+const Banner = ({}) => {
     return (
         <>
         <div className="hero bg-base-200 mt-40">

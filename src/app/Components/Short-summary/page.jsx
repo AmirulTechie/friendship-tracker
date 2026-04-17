@@ -1,5 +1,6 @@
 "use client"
 const ShortSummary = ({friends}) => {
+    if (!friends) return null;
     const countOnTrack = friends.filter(freind => freind.status === 'on-track').length;
     const counOverdue = friends.filter(friend => friend.status === "overdue").length;
     const interactionsData = JSON.parse(localStorage.getItem('interactions'));

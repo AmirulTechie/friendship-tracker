@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { IoCall, IoVideocam } from "react-icons/io5";
 import { LuMessageSquareText } from "react-icons/lu";
+import EmptyListImg from "../../../public/emptyList.webp"
+import Image from "next/image";
 
 const TimelinePage = () => {
     const [interactions, setInteractions] = useState(() => {
@@ -22,14 +24,15 @@ const TimelinePage = () => {
                     <h1 className="text-3xl font-bold text-slate-800">Timeline</h1>
                     {interactions.length === 0 ? "" :  
                         <button onClick={clearHistory} className="text-xs border border-red-200 px-3 py-1 rounded-lg text-red-500 hover:bg-red-50 hover:cursor-pointer">
-                            Clear History
+                            Clear Timeline
                         </button>
                     }
                     
                 </div>
                 {interactions.length === 0 ? (
-                    <div className="bg-white text-center rounded-2xl">
-                        <p className="">No Interactions Yet</p>
+                    <div className="bg-white text-center rounded-2xl flex flex-col justify-center items-center">
+                        <Image src={EmptyListImg} alt="empty"></Image>
+                        <p className="text-3xl font-bold mb-20">No Interactions Yet</p>
                     </div>
                 ) : (
                     <div className="flex flex-col gap-4">

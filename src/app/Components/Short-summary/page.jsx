@@ -1,7 +1,9 @@
+"use client"
 const ShortSummary = ({friends}) => {
     const countOnTrack = friends.filter(freind => freind.status === 'on-track').length;
     const counOverdue = friends.filter(friend => friend.status === "overdue").length;
-
+    const interactionsData = JSON.parse(localStorage.getItem('interactions'));
+    console.log(interactionsData);
     return (
         <div className="flex gap-8 flex-wrap justify-center items-center container mx-auto mb-15">
             <div className="w-65 flex flex-col items-center gap-1.5 px-6 py-7 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg">
@@ -17,7 +19,7 @@ const ShortSummary = ({friends}) => {
                 <span className="text-xs text-gray-400 uppercase tracking-wider font-medium">Need Attention</span>
             </div>
             <div className="w-65 flex flex-col items-center gap-1.5 px-6 py-7 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg">
-                <span className="text-5xl font-bold text-gray-900 leading-none"> 12 </span>
+                <span className="text-5xl font-bold text-gray-900 leading-none"> {`${interactionsData ? interactionsData.length : 0}`} </span>
                 <span className="text-xs text-gray-400 uppercase tracking-wider font-medium">Interactions This Month</span>
             </div>
 

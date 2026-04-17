@@ -11,7 +11,7 @@
 
 **A relationship management app that helps you stay connected with the people who matter most.**
 
-[🌐 Live Demo](#) · [📁 GitHub Repo](#)
+[🌐 Live Demo](keenkeeper-tracker-by-amirul.vercel.app)
 
 </div>
 
@@ -73,7 +73,7 @@ Whether it's a quick text, a phone call, or a video chat, every interaction is l
 ## 🙋‍♂️ Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
+- GitHub: [AmirulTechie](https://github.com/AmirulTechie)
 
 ---
 

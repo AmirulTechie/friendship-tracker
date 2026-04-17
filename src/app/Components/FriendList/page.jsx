@@ -9,7 +9,7 @@ const FriendList = ({ friends }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 1500);
+        }, 1000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -17,7 +17,7 @@ const FriendList = ({ friends }) => {
     if (loading) {
         return (
             <div className="flex justify-center items-center min-h-75">
-                <p className="text-5xl text-red-500">Loading.....</p>
+                <div className="w-12 h-12 border-4 border-gray-300 border-t-green-800 rounded-full animate-spin"></div>
             </div>
         );
     }

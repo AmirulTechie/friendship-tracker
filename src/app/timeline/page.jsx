@@ -55,7 +55,7 @@ const TimelinePage = () => {
                 </div>
 
                 {interactions.length === 0 ? (
-                    <div className="bg-white text-center rounded-2xl flex flex-col justify-center items-center">
+                    <div className="bg-white text-center rounded-2xl flex flex-col justify-center items-center max-w-3xl">
                         <Image src={EmptyListImg} alt="empty" />
                         <p className="text-3xl font-bold mb-20">No Interactions Yet</p>
                     </div>

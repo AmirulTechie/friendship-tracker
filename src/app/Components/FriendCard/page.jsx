@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const FriendCard = ({friend}) => {
+    if (!friend) return null;
     const {id, name, picture, days_since_contact, status, tags } = friend
     return (
         <Link href={`/friend/${id}`}>

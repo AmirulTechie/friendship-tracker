@@ -1,7 +1,6 @@
 "use client";
-
 import { useEffect, useState } from "react";
-import FriendCard from "../FriendCard/page";
+import FriendCard from "@/app/Components/FriendCard/page";
 
 const FriendList = ({ friends }) => {
     const [loading, setLoading] = useState(true);
@@ -32,8 +31,8 @@ const FriendList = ({ friends }) => {
                 </div>
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-10 mt-10">
-                    {friends.map((friend, index) => (
-                        <FriendCard key={index} friend={friend} />
+                    {friends.map((friend) => (
+                        <FriendCard key={friend.id} friend={friend} />
                     ))}
                 </div>
             </div>

@@ -1,13 +1,13 @@
 "use client";
 import { IoCall, IoVideocamSharp } from "react-icons/io5";
 import { LuMessageSquareText } from "react-icons/lu";
-import { IoIosVideocam } from "react-icons/io";
 import { toast } from "react-toastify";
+import { getStorage, setStorage } from "@/lib/storage";
 
 const CheckInButtons = ({ friendId, name }) => {
     
-    const saveInteraction = (type,) => {
-        const existing = JSON.parse(localStorage.getItem("interactions") || "[]");
+    const saveInteraction = (type) => {
+        const existing = getStorage("interactions") || [];
         const newEntry = {
             friendId,
             name,
@@ -15,7 +15,7 @@ const CheckInButtons = ({ friendId, name }) => {
             date: new Date().toLocaleDateString(),
             time: new Date().toLocaleTimeString()
         };
-        localStorage.setItem("interactions", JSON.stringify([...existing, newEntry]));
+        setStorage("interactions", [...existing, newEntry]);
         toast.success(`${type} ${name}`);
     };
 

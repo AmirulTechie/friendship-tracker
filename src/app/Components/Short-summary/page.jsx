@@ -1,10 +1,12 @@
 "use client"
+
+import { getStorage } from "@/lib/storage";
+
 const ShortSummary = ({friends}) => {
     if (!friends) return null;
     const countOnTrack = friends.filter(freind => freind.status === 'on-track').length;
     const counOverdue = friends.filter(friend => friend.status === "overdue").length;
-    const interactionsData = JSON.parse(localStorage.getItem('interactions'));
-    console.log(interactionsData);
+    const interactionsData = getStorage('interactions');
     return (
         <div className="flex gap-8 flex-wrap justify-center items-center container mx-auto mb-15">
             <div className="w-65 flex flex-col items-center gap-1.5 px-6 py-7 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg">
